@@ -1,0 +1,36 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+.botones{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    padding: 1rem;
+    position: relative;
+  
+  }
+  
+  .botones:hover, .botones:focus{
+    background-color: plum;
+  }
+  
+  .botones.active{
+    background-color: palevioletred;
+  }
+  
+  .botones:after{
+    content: '';
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 0;
+    height: 1px;
+    background-color: palevioletred;
+  }
+  
